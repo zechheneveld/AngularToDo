@@ -23,7 +23,7 @@ addTask(task: Task) : Observable<Task> {
   return this.http.post<Task>(this.url,task);
 }
 
-deleteTask(id:number): Observable<Task> {
+deleteTask(id: number): Observable<Task> {
   return this.http.delete<Task>(this.url + "/" + id);
 }
 
@@ -31,7 +31,7 @@ editTask(task: Task) : Observable<Task> {
   return this.http.put<Task>(this.url + "/" + task.id, task);
 }
 
-viewTask(id: number) : Observable<Task> {
+taskViewed(id: number) : Observable<Task> {
   return this.http.get<Task>(this.url + "/" + id);
 }
 

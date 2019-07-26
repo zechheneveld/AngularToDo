@@ -2,3 +2,10 @@
 .hover-cursor{
   cursor: pointer;
 }
+span {
+  position: relative;
+}
+input {
+  align-content: center
+}
+

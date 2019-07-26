@@ -1,18 +1,18 @@
 {
   "tasks": [
     {
-      "name": "asdadsasd",
-      "description": "asdasdas123",
-      "time": "asdas123",
-      "items": "asdads123",
-      "id": 3
+      "name": "Make the view button work",
+      "time": "2 hours",
+      "description": "Work hard!!",
+      "items": "computer, brain, smarts, candy!",
+      "id": 4
     },
     {
-      "name": "123",
-      "time": "123",
-      "description": "123",
-      "items": "123",
-      "id": 4
+      "name": "Do the dishes",
+      "time": "15 mins",
+      "description": "wash dishes and dry",
+      "items": "soap, towel, hands",
+      "id": 5
     }
   ]
 }

@@ -18,12 +18,14 @@ getTasks(): void{
 
 deleteTask(id: number) : void {
   this.tasksService.deleteTask(id).subscribe(
-    t=> this.getTasks()
+    t => this.getTasks()
     )
 }
 viewTask(id: number) : void {
-  this.tasksService.viewTask(id).subscribe(
-    t => this.getTasks()
+  this.tasksService.taskViewed(id).subscribe(
+    t => {
+    document.getElementById("taskDetails").innerHTML = "<ul><span>Time to Complete: " + t.time + "</span></br><span>Task description: " + t.description + "</span></br><span>Items needed: " + t.items + "</span></ul>";
+  }
   )
 }
 
@@ -31,6 +33,6 @@ viewTask(id: number) : void {
   }
 
   ngOnInit() {
-this.getTasks(); 
+    this.getTasks(); 
   }
 }
