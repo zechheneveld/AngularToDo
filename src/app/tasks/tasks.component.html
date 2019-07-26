@@ -1,0 +1,10 @@
+<div style="margin:5px 0px">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let task of tasks">
+      {{task.name}}
+      <a [routerLink]="['/edit',task.id]"><span class="hover-cursor text-default pull-right"><i class="fa fa-cog"></i></span></a>
+      <span class="hover-cursor text-danger pull-right" (click)="deleteTask(task.id)"><i class="fa fa-trash-o fa-lg"></i></span>
+      <span class="hover-cursor text-success pull-right" (click)="viewTask(task.id)"><i class="fa fa-eye"></i></span>
+    </li>
+  </ul>
+</div>

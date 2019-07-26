@@ -1,0 +1,12 @@
+<div class="jumbotron" style="padding:45px 0px">
+    <h1 class="text-center">Add Task</h1>
+    Name: <input [(ngModel)]="newTask.name">
+    <br/>
+    Time: <input [(ngModel)]="newTask.time">
+    <br/>
+    Description: <input [(ngModel)]="newTask.description">
+    <br/>
+    Items Needed: <input [(ngModel)]="newTask.items">
+    <br/>
+    <button (click)="addTask()">Add</button>
+</div>
